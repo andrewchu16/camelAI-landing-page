@@ -2,8 +2,47 @@
 
 @theme {
   --font-sans: Segoe UI;
+
+  /* Colors */
+  --color-gradient-start: #9cc0c3;
+  --color-gradient-middle: #767e95;
+  --color-gradient-end: #816f80;
+  
+  --color-text-base: rgba(255, 255, 255, 0.9);
+  --color-text-hover: rgb(255, 255, 255);
+
+  /* Button Gradients */
+  --color-button-primary-gradient1: #58f1ff63;
+  --color-button-primary-gradient2: #5f83f04f;
+  --color-button-primary-gradient3: #e54bdb49;
+
+  --color-button-secondary-border: rgba(255, 255, 255, 0.4);
+  --color-button-secondary-gradient1: rgba(255, 255, 255, 0.1);
+  --color-button-secondary-gradient2: rgba(255, 255, 255, 0.2);
+  --color-button-secondary-gradient3: rgba(255, 255, 255, 0.1);
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes subtle-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+}
+
+.press-me-animation {
+  animation: subtle-glow 2s infinite;
+}
+
+.press-me-animation:hover {
+  animation: none;
+  box-shadow: none;
 }
