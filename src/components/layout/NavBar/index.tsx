@@ -5,15 +5,15 @@ import NavLink from "./components/NavLink";
 
 export const NavBar = () => {
   return (
-    <nav className="bg-black/10 backdrop-blur-[10px] text-white font-semibold flex justify-center py-2.5 w-full rounded-lg transition-all duration-700 ease-in-out">
+    <nav className="bg-black/10 backdrop-blur-[10px] font-semibold text-[theme(--fs-small)] flex justify-center py-2.5 w-full rounded-lg transition-all duration-700 ease-in-out">
       <div className="max-w-[1340px] w-full flex flex-row px-5">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center flex-shrink-0">
           <Image
             src="/main-camelai.webp"
             alt="camelAI Logo"
             width={200}
-            height={25}
-            className="h-[25px] w-auto"
+            height={40}
+            className="h-[25px] w-auto aspect-auto flex-shrink-0"
             priority
           />
         </Link>
