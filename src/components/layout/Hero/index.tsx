@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className="flex flex-col items-center justify-center min-h-screen text-center text-white px-4 pb-10 pt-7">
       {/* Content */}
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-xl md:text-h1 font-semibold mb-6">The AI Data Analyst</h1>
+        <h1 className="text-3xl md:text-h1 font-semibold mb-6">The AI Data Analyst</h1>
         <p className="text-p mb-12">
           Ask questions, get instant charts and insights from your data.
         </p>
