@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-mono',
+});
 
 export const metadata: Metadata = {
   title: "camelAI: AI-powered Data Analysis | SQL-Free Business Intelligence",
@@ -34,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={robotoMono.variable}>
       <head>
         <script
           type="application/ld+json"

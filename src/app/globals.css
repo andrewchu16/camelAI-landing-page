@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: Segoe UI;
+  --font-mono: Courier New, monospace;
 
   /* Colors */
   --color-gradient-start: #9cc0c3;
@@ -61,7 +62,7 @@
     --text-h1: 50px;
     --text-h2: 30px;
     --text-h3: 25px;
-    --text-p: 20px;
+    --text-p: 18px;
     --text-small: 14px;
     --text-button: 16px;
   }
@@ -72,7 +73,7 @@
     --text-h1: 60px;
     --text-h2: 30px;
     --text-h3: 25px;
-    --text-p: 20px;
+    --text-p: 18px;
     --text-small: 16px;
     --text-button: 18px;
   }

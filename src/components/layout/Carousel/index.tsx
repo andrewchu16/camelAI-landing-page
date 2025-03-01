@@ -38,7 +38,7 @@ const Carousel = () => {
   const randomizedLogos2 = useMemo(() => shuffleArray(LOGOS), []);
 
   return (
-    <div className="relative w-full overflow-hidden bg-light-background">
+    <section className="relative w-full overflow-hidden bg-light-background">
       {/* Background Image */}
       <div className="relative z-10 max-w-[1340px] mx-auto">
         <div className="absolute inset-0">
@@ -67,7 +67,7 @@ const Carousel = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

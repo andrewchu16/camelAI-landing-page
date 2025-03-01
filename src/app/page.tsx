@@ -5,7 +5,7 @@ import MiniFooter from "@/components/layout/MiniFooter";
 import Demo from "@/components/layout/Demo";
 import Carousel from "@/components/layout/Carousel";
 import FAQ from "@/components/layout/FAQ";
-
+import ApiSignUp from "@/components/layout/ApiSignUp";
 export default function Home() {
   return (
     <>
@@ -17,11 +17,12 @@ export default function Home() {
           <NavBar />
         </header>
         <Hero />
-        <div className="bg-light-background py-16">
+        <div className="bg-light-background flex flex-col gap-10">
           <Carousel />
           <Demo />
+          <ApiSignUp />
+          <FAQ />
         </div>
-        <FAQ />
         <MiniFooter />
       </main>
       <Footer />
