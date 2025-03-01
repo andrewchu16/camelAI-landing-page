@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: Segoe UI;
+  --font-sans: Segoe UI, Arial, Helvetica, sans-serif;
   --font-mono: Courier New, monospace;
 
   /* Colors */
@@ -82,6 +82,7 @@
 
 body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
 }
 
 @keyframes subtle-glow {
