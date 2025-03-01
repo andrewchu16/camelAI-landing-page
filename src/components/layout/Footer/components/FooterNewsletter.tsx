@@ -71,7 +71,7 @@ export const FooterNewsletter = () => {
               placeholder="email"
               className={`px-4 py-2 bg-transparent border ${
                 error ? 'border-red-500' : 'border-white/60'
-              } rounded-[20px] w-[240px] text-white placeholder:text-white/60 focus:outline-none focus:border-white`}
+              } rounded-[20px] min-w-[140px] md:min-w-[240px] text-white placeholder:text-white/60 focus:outline-none focus:border-white`}
             />
             <PrimaryButton onClick={() => handleSubmit(new Event('submit') as unknown as React.FormEvent)} className="press-me-animation">
               Subscribe
