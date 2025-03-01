@@ -1,7 +1,12 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import PrimaryButton from '@/components/widgets/PrimaryButton';
+import ApiWaitlistModal from './components/ApiWaitlistModal';
 
 const ApiSignUp = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="w-full bg-light-background pb-16">
       <div className="container mx-auto px-4">
@@ -16,7 +21,7 @@ const ApiSignUp = () => {
               <p className="text-h3 text-white-80 mb-8">
                 Embed AI-powered analytics directly in your application with our API
               </p>
-              <PrimaryButton href="/api-waitlist">
+              <PrimaryButton onClick={() => setIsModalOpen(true)}>
                 Join API Waitlist
               </PrimaryButton>
             </div>
@@ -53,6 +58,11 @@ const ApiSignUp = () => {
           </div>
         </div>
       </div>
+
+      <ApiWaitlistModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 };
