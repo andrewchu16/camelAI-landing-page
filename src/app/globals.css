@@ -7,17 +7,34 @@
   --color-gradient-start: #9cc0c3;
   --color-gradient-middle: #767e95;
   --color-gradient-end: #816f80;
-  
+
   /* Special Gradients */
   --color-gradient3-start: #6e7f42;
   --color-gradient3-middle: #c37842;
   --color-gradient3-end: #f04e42;
-  
+
   --color-text-base: rgba(255, 255, 255, 0.9);
   --color-text-hover: rgb(255, 255, 255);
 
   /* Dark Background */
   --color-dark-background: black;
+  --color-white: #ffffff;
+  --color-white-90: #fffffff3;
+  --color-white-80: #ffffffc7;
+  --color-white-60: #ffffffa9;
+  --color-white-40: #ffffff68;
+  --color-white-10: #ffffff1a;
+  --color-black: #000000;
+  --color-black-sheer: rgba(0, 0, 0, 0.3);
+  --color-black-60: rgba(0, 0, 0, 0.4);
+  --color-black-90: rgba(0, 0, 0, 0.9);
+  --color-light-background: #0d1014;
+  --color-light-background-50: #0d1014a0;
+  --color-light-background-10: #0d10147e;
+  --color-light-background-clear: #0d10144d;
+  --color-secondary-text: #6a7e97;
+  --color-light-background-blue: #1d242d;
+  --color-light-background-blue-50: #1d242d50;
 
   /* Button Gradients */
   --color-button-primary-gradient1: #58f1ff63;
@@ -87,26 +104,58 @@ body {
 }
 
 * {
-  scrollbar-width: thin;  /* For Firefox */
-  scrollbar-color: var(--clr-var-text-40) transparent;  /* For Firefox */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--clr-var-text-40) transparent; /* For Firefox */
 }
 
 /* For Webkit browsers like Chrome, Safari */
 ::-webkit-scrollbar {
-  width: 4px;  /* Width of vertical scrollbar */
-  height: 4px;  /* Height of horizontal scrollbar */
+  width: 4px; /* Width of vertical scrollbar */
+  height: 4px; /* Height of horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;  /* Color of the tracking area */
+  background: transparent; /* Color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--clr-var-text-40);  /* Color of the scroll thumb */
-  border-radius: 4px;  /* Rounded corners of the scroll thumb */
-  border: 2px solid var(--clr-var-dark-background-20);  
+  background-color: var(--clr-var-text-40); /* Color of the scroll thumb */
+  border-radius: 4px; /* Rounded corners of the scroll thumb */
+  border: 2px solid var(--clr-var-dark-background-20);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--clr-var-text-80);  /* Color of the scroll thumb on hover */
+  background-color: var(
+    --clr-var-text-80
+  ); /* Color of the scroll thumb on hover */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 180s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 180s linear infinite;
+}
+
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
 }
