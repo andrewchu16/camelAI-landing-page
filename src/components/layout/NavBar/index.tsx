@@ -19,9 +19,9 @@ export const NavBar = () => {
         </Link>
 
         <div className="flex flex-row justify-end items-center w-full gap-8">
-          <NavLink href="/blog">Blog</NavLink>
-          <NavLink href="/pricing">Pricing</NavLink>
-          <NavLink href="/login">Log in</NavLink>
+          <NavLink href="https://camelai.com/blog">Blog</NavLink>
+          <NavLink href="https://camelai.com/pricing">Pricing</NavLink>
+          <NavLink href="https://app.camelai.com">Log in</NavLink>
         </div>
       </div>
     </nav>
