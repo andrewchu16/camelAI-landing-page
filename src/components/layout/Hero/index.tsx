@@ -18,12 +18,8 @@ export const Hero = () => {
         <div className="flex justify-center gap-4 mb-16">
           <PrimaryButton href="/try" className="press-me-animation">
             Try free
-            <span className="ml-2">→</span>
           </PrimaryButton>
-          <SecondaryButton href="/demo">
-            Book demo
-            <span className="ml-2">→</span>
-          </SecondaryButton>
+          <SecondaryButton href="/demo">Book demo</SecondaryButton>
         </div>
 
         {/* Feature badges */}

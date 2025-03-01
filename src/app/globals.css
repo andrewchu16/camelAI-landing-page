@@ -8,8 +8,16 @@
   --color-gradient-middle: #767e95;
   --color-gradient-end: #816f80;
   
+  /* Special Gradients */
+  --color-gradient3-start: #6e7f42;
+  --color-gradient3-middle: #c37842;
+  --color-gradient3-end: #f04e42;
+  
   --color-text-base: rgba(255, 255, 255, 0.9);
   --color-text-hover: rgb(255, 255, 255);
+
+  /* Dark Background */
+  --color-dark-background: black;
 
   /* Button Gradients */
   --color-button-primary-gradient1: #58f1ff63;

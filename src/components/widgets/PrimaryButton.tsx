@@ -20,6 +20,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
     return (
       <Link href={href} className={buttonClasses}>
         {children}
+        <span className="ml-2">→</span>
       </Link>
     );
   }
@@ -27,6 +28,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   return (
     <button onClick={onClick} className={buttonClasses}>
       {children}
+      <span className="ml-2">→</span>
     </button>
   );
 };

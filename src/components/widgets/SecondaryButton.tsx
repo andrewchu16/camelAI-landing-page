@@ -18,6 +18,7 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
     return (
       <Link href={href} className={buttonClasses}>
         {children}
+        <span className="ml-2">→</span>
       </Link>
     );
   }
@@ -25,6 +26,7 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
   return (
     <button onClick={onClick} className={buttonClasses}>
       {children}
+      <span className="ml-2">→</span>
     </button>
   );
 };
