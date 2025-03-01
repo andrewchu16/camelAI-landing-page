@@ -56,10 +56,10 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-light-background to-black py-4">
+    <section className="w-full bg-gradient-to-b from-light-background to-black pt-16 pb-4 md:py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-[1340px] mx-auto">
-          <h2 className="text-h2 text-white text-center mb-16">FAQs</h2>
+          <h2 className="text-h2 text-white text-center mb-8 md:mb-16">FAQs</h2>
           <div className="max-w-4xl mx-auto">
             {faqItems.map((item, index) => (
               <AccordionItem

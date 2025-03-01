@@ -31,7 +31,7 @@ const DemoSection: React.FC<DemoSectionProps> = ({
             height={24}
             className="opacity-80"
           />
-          <h2 className="font-mono text-[32px] text-white font-light">{title}</h2>
+          <h2 className="font-mono text-h2 text-white font-light">{title}</h2>
         </div>
         <p className="text-p max-w-2xl mx-auto text-white-80 font-medium">{description}</p>
       </div>

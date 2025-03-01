@@ -10,7 +10,7 @@ interface LogoProps {
 
 export const Logo = ({ src, alt, href }: LogoProps) => {
   const LogoContent = () => (
-    <div className="w-[100px] h-[100px] relative">
+    <div className="w-[80px] h-[80px] relative md:w-[100px] md:h-[100px]">
       <Image
         src={src}
         alt={alt}
