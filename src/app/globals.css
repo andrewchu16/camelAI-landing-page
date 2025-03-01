@@ -16,6 +16,7 @@
 
   --color-text-base: rgba(255, 255, 255, 0.9);
   --color-text-hover: rgb(255, 255, 255);
+  --color-link-blue: #58a0ff;
 
   /* Dark Background */
   --color-dark-background: black;
