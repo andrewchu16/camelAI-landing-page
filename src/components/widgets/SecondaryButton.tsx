@@ -13,10 +13,10 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
   onClick,
   href,
 }) => {
-  const buttonClasses = `text-white border-2 border-button-secondary-border w-40 h-[45px] flex justify-around items-center gap-2 pl-2 text-lg font-semibold rounded-[20px] transition-all duration-300 relative overflow-hidden z-[1] hover:translate-y-[-2px] hover:border-white before:content-[''] before:absolute before:top-0 before:left-0 before:w-[200%] before:h-full before:bg-gradient-to-r before:from-button-secondary-gradient1 before:via-button-secondary-gradient2 before:to-button-secondary-gradient3 before:-translate-x-full hover:before:translate-x-0 before:transition-transform before:duration-600 before:-z-[1]`;
+  const buttonClasses = `text-white border-2 border-button-secondary-border w-48 h-[45px] flex justify-around items-center text-lg font-semibold rounded-[20px] transition-all duration-300 relative overflow-hidden z-[1] hover:translate-y-[-2px] hover:border-white before:content-[''] before:absolute before:top-0 before:left-0 before:w-[200%] before:h-full before:bg-gradient-to-r before:from-button-secondary-gradient1 before:via-button-secondary-gradient2 before:to-button-secondary-gradient3 before:-translate-x-full hover:before:translate-x-0 before:transition-transform before:duration-600 before:-z-[1]`;
 
   const ChevronIcon = () => (
-    <div className="relative w-2 h-2 mr-2 flex items-center">
+    <div className="relative w-2 h-2 mr-1 flex items-center">
       <Image
         src="/chevron-right-black.png"
         alt="→"

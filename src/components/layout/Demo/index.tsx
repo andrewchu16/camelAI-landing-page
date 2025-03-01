@@ -3,7 +3,7 @@ import DemoSection from './components/DemoSection';
 
 const Demo = () => {
   return (
-    <section className="w-full bg-light-background py-6">
+    <section className="w-full bg-light-background">
       <div className="container mx-auto px-4">
         {/* Chat Demo */}
         <DemoSection
