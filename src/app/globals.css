@@ -82,7 +82,6 @@
 
 body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  overflow-y: hidden;
 }
 
 @keyframes subtle-glow {
